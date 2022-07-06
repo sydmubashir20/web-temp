@@ -1,0 +1,269 @@
+/* Css Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* scroll behaviour */
+html{
+ scroll-behavior: smooth;
+}
+/* navbar styling starts here */
+
+
+#navbar {
+    display: flex;
+    /* align-items: center; */
+}
+
+#logo {
+    margin-top: -29px;
+}
+
+#logo>img {
+    height: 100px;
+}
+
+#navbar>ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#navbar>ul>li {
+    margin-left: 10px;
+}
+
+.active {
+    background-color: orangered;
+    color: white !important;
+    border-radius: 5px 0px 5px 0px;
+}
+
+#navbar>ul>li>a {
+    text-decoration: none;
+    color: orangered;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    transition: all 0.5s;
+}
+
+#navbar>ul>li>a:hover {
+    border-radius: 5px 0px 5px 0px;
+    background-color: orangered;
+    color: white;
+}
+
+
+/* navbar styling section ends here */
+
+
+/* featured content area styling starts here */
+/* Used utility calsses for styling */
+/* featured content area styling ends here */
+
+
+/* Pralex effect image section styling starts here */
+#content-cont{
+    min-height:400px;
+    width: 100%;
+    margin-top: 39px;
+    background: url('../images/laptop1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+/* Pralex effect image section styling ends here */
+
+/* Location and services section styling starts here */
+#map-container{
+    height:400px;
+    width: 100%;
+    margin-top: 10px;
+}
+#head-location{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 230px;
+    margin: auto;
+    margin-top: 20px;
+}
+#head-location-hr{
+    width: 230px;
+    margin: auto;
+    border: 3px solid orangered;
+    border-radius: 5px;
+}
+/* Location and services section styling ends here */
+/* services section starts here */
+
+#Service-card {
+    min-height: 350px;
+    width: 30%;
+    box-shadow: 1px 1px 10px 1px gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#Service-card:hover{
+    transform: translate(5px,5px);
+}
+#desc-of-service{
+    margin-top: auto;
+}
+
+/* services section ends here */
+/* footer section styling starts here */
+#logo-img{
+    text-align: center;
+}
+#logo-img>img{
+    height: 300px;
+    margin: auto;
+}
+#copy-right{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#copy-icon{
+    color: orangered;
+}
+.important-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    align-items: center;
+}
+.important-links>li{
+    list-style: none;
+}
+.important-links>li>a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color:gray;
+    transition: all 0.5s;
+}
+.important-links>li>a:hover{
+    font-size: 2.1em;
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.size-icon-s{
+    font-size: 2em; 
+}
+.footer-hr{
+    border: 1px solid rgba(252, 126, 80, 0.863);
+    border-radius: 5px;
+}
+/* footer section ends starts here */
+/* utlity classes */
+.links-section{
+    min-height: 400px;
+    min-width: 30%;
+    margin-top: 20px;
+    
+}
+.nav-footer-container {
+    min-height: 60px;
+    width: 90%;
+    padding: 10px;
+    margin: 0px auto;
+}
+.round-icon{
+    height: 140px;
+    width:140PX;
+    box-shadow: 1px 1px 10px 1px gray;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-size{
+    font-size: 70px;
+}
+.content-container {
+    width: 90%;
+    min-height: 400px;
+    margin: 10px auto;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+.heading-for-sections {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.uderline-for-headings {
+    width: 250px;
+    margin: auto;
+    border: 3px solid orangered;
+    border-radius: 5px;
+}
+
+.card {
+    min-height: 300px;
+    width: 20%;
+    box-shadow: 1px 1px 10px 1px gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.card-desc{
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card:hover{
+    transform: translate(5px,5px);
+}
+.card>.card-img>img {
+    width: 100%;
+}
+.card-btn{
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.card-btn:hover{
+    background-color: orangered;
+    color: white;
+}
+/* utlity classes ends here*/
+/* Responsiveness */
+@media (max-width: 800px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #navbar>ul {
+      flex-direction: column;
+      margin-left:0px;
+    }
+    #navbar>ul>li{
+      margin-top: 10px;      
+    }
+    .card-row{
+    flex-direction: column;
+    justify-content: center;
+    }
+    .card{width: 100%;}
+    #Service-card{width: 100%;}
+  }
+  
